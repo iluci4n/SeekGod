@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SeekGod - Christianity">
+    <meta name="keywords" content="christianity,faith,jesus,god,love,grace,christ,bible,gospel,blog">
+    <title>SeekGod - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Seek God, find Jesus</h1>
+        <p>Christianity, faith, bible..</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Bible</a></li>
+            <li><a href="countdown.html">Scripts</a></li>
+            <li><a href="bible-verse.html">Faith</a></li>
+            <li><a href="tic-tac-toe.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Hello, Welcome to <a href="https://www.seekgod.site">SeekGod.site</a>!
+            Here we share and write Christian faith blogs. We also do Bible study blog posts every Sabbath <a href="https://www.yourhomepage.com">[?]</a></p>
+
+        <div class="social-links">
+            <h3>Connect with Us:</h3>
+            <a href="https://github.com/iluci4n/SeekGod" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <script>
+        if (location.pathname.endsWith('.html')) {
+            var newPath = location.pathname.replace(/\.html$/, '');
+            history.replaceState({}, '', newPath);
+        }
+    </script>
+</body>
+
+</html>
