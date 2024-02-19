@@ -9,6 +9,21 @@
     <title>SeekGod - Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,11 +53,16 @@
         </div>
     </section>
 
+    <footer>
+        <p>&copy; <span id="currentYear"></span> SeekGod - All rights reserved.</p>
+    </footer>
+
     <script>
         if (location.pathname.endsWith('.html')) {
             var newPath = location.pathname.replace(/\.html$/, '');
             history.replaceState({}, '', newPath);
         }
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
     </script>
 </body>
 
